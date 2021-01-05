@@ -1,3 +1,98 @@
-#fishtank {}
-.fish {}
-.fish_name
+* {
+  /* border: 1px dotted lightblue; */
+  font-family: Helvetica, Arial, sans-serif
+}
+
+/* Header Component */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  font-weight: bold;
+  font-size: 4em;
+  letter-spacing: .2em;
+}
+
+
+/* Fish Section Component */
+#fish-container {
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+}
+
+.fish-heading {
+  align-self: center;
+}
+
+.fish-card {
+  display: flex;
+}
+
+.fish-card ul {
+  list-style-type: none;
+}
+
+.fish-card ul li {
+  margin: 1.5em;
+}
+
+/* Quotes Section Component */
+#quotes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Locations Section Component */
+#locations {
+  display: flex;
+  flex-direction: column;
+}
+
+.locations-heading {
+  align-self: center;
+}
+
+.picture-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.picture-container p {
+  font-weight: bold;
+}
+
+/* Main Container */
+.main-container {
+  display: flex;
+  justify-content: space-around
+}
+
+/* Aside Component */
+aside {
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aside-header {
+  margin-bottom: 2em;
+}
+
+aside ul li {
+  margin: 1em;
+}
+
+/* Footer Component */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
