@@ -1,6 +1,19 @@
 * {
   /* border: 1px dotted lightblue; */
-  font-family: Helvetica, Arial, sans-serif
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: #D4E7F7;
+}
+
+/* Miscellaneous Styling */
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
 }
 
 /* Header Component */
@@ -8,6 +21,12 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #3028FA;
+  color: #FAD766;
+}
+
+header img {
+  margin-right: 8em;
 }
 
 header h1 {
@@ -21,7 +40,8 @@ header h1 {
 #fish-container {
   display: flex;
   flex-direction: column;
-  width: 60vw;
+  width: 75vw;
+  align-items: flex-start;
 }
 
 .fish-heading {
@@ -32,8 +52,13 @@ header h1 {
   display: flex;
 }
 
+.fish-card img {
+  margin-left: 2em;
+}
+
 .fish-card ul {
   list-style-type: none;
+  margin-left: 15em;
 }
 
 .fish-card ul li {
@@ -95,4 +120,11 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: #3028FA;
+  color: #FAD766;
+  height: 20vh;
+  justify-content: space-evenly;
 }
+
+
+
