@@ -1,6 +1,6 @@
 * {
-  /* border: 1px dotted lightblue; */
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
 }
 
 body {
@@ -14,6 +14,12 @@ h2 {
 
 h3 {
   font-size: 1.5em;
+}
+
+header, 
+.fish-card img,
+footer {
+  border: 5px solid #000;
 }
 
 /* Header Component */
@@ -35,6 +41,13 @@ header h1 {
   letter-spacing: .2em;
 }
 
+h1,
+h2,
+h3,
+.picture-container p {
+  font-family: 'Oswald', sans-serif;
+}
+
 
 /* Fish Section Component */
 #fish-container {
@@ -42,6 +55,7 @@ header h1 {
   flex-direction: column;
   width: 75vw;
   align-items: flex-start;
+  padding-left: 3em;
 }
 
 .fish-heading {
@@ -91,6 +105,7 @@ header h1 {
 
 .picture-container p {
   font-weight: bold;
+  font-size: 2em;
 }
 
 /* Main Container */
