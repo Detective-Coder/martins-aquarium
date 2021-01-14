@@ -87,13 +87,16 @@ h3,
 }
 
 /* Locations Section Component */
-#locations {
+#location-list {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-.locations-heading {
-  align-self: center;
+.header-container {
+  display: flex;
+  justify-content: center;
 }
 
 .picture-container {
