@@ -1,15 +1,19 @@
 const locationCollection = [
   {
-    name: "Madagascar"
+    name: "Madagascar",
+    image: "https://www.telegraph.co.uk/content/dam/Travel/2017/june/madagascar-miavana.jpg"
   },
   {
-    name: "Hawaii"
+    name: "Hawaii",
+    image: "https://www.telegraph.co.uk/content/dam/Travel/2017/june/madagascar-miavana.jpg"
   },
   {
-    name: "Iceland"
+    name: "Iceland",
+    image: "https://www.telegraph.co.uk/content/dam/Travel/2017/june/madagascar-miavana.jpg"
   },
   {
-    name: "Greenland"
+    name: "Greenland",
+    image: "https://www.telegraph.co.uk/content/dam/Travel/2017/june/madagascar-miavana.jpg"
   }
 ];
 
