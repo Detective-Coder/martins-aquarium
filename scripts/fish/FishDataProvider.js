@@ -63,16 +63,13 @@ export const soldierFish = () => {
 
   // Only display multiples of 5
   for (const fish of fishCollection) {
-    if (fish.length % 5 === 0) {
+    if (fish.length % 5 === 0 && fish.length % 3 !== 0) {
         soldiers.push(fish);
     }
   }
 
   return soldiers
 }
-
-const roughFish = soldierFish();
-console.log(roughFish);
 
 export const nonHolyFish = () => {
   // Any fish not a multiple of 3 or 5
