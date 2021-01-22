@@ -1,3 +1,4 @@
+// declaring a variable and storing an array of fish objects in it
 let fishCollection = [
   {
       name: "Bart",
@@ -43,20 +44,24 @@ let fishCollection = [
   }
 ];
 
+// creating and exporting a function that will sort through the fishCollection array and return an array of fish that are divisible by 3
 export const mostHolyFish = () => {
-  // 3, 6, 9, 12, etc... fish
+  // creating a new variable and setting it to an empty array, this will hold the fish that are divisible by 3
   const holyFish = [];
 
- // Only display multiples of 3
+ // looping through the fishCollection array with for of loop, declaring a variable that will act as an index of the array
   for (const fish of fishCollection) {
+    // a conditional statement that tests the length value of the index, it uses modulo to divid by 3 and ask 'does the remainder equal zero?'
     if (fish.length % 3 === 0) {
+      // if the item at the current index is divisible by 3, then push that item onto the holyFish array we made earlier in the function
         holyFish.push(fish);
     }
   }
-
+  // this will return the array after we've done everything we're going to do to it, without this return statement, we wouldn't get the info back from this function when we call it
   return holyFish
 }
 
+// creating and exporting another array, this time it checks the fishCollection array and returns a new array made up of fish that are divisible by five and not divisible by 3
 export const soldierFish = () => {
   // 5, 10, 15, 20, 25, etc... fish
   const soldiers = [];
@@ -71,6 +76,7 @@ export const soldierFish = () => {
   return soldiers
 }
 
+// creating and exporting another function, this function loops through the fishCollection and returns an array of fish that are not disible by 3 and not divisible by 5
 export const nonHolyFish = () => {
   // Any fish not a multiple of 3 or 5
   const regularFish = [];
@@ -86,7 +92,7 @@ export const nonHolyFish = () => {
 
 }
 
-
+// creating and exporting a function that returns a copy of the fishCollection array
 export const useFish = () => {
   return fishCollection.slice()
 }

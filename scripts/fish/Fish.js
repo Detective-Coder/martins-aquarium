@@ -1,3 +1,4 @@
+// exporting and creating a function that accepts an array and then interpolates the values of its keys and produces some html as well
 export function Fish(fish) {
   return `
   <section class="fish-card">
